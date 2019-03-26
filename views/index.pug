@@ -3,3 +3,14 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  ul
+  each entry in allEntries
+    li
+      h3 Name: #{entry.userId}
+      p Id: #{entry.id}
+      p Title: #{entry.title}
+      p Body: #{entry.body}
+    hr
+  else
+    h1 No results
+

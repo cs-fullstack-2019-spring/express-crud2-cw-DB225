@@ -1,0 +1,11 @@
+extends layout
+block header
+
+block content
+
+    form(method='GET' action='/deleteEntry')
+        p
+            label(for='id') Post to delete:
+            input(type='text', id='id', name='id')
+
+        button Submit
